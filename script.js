@@ -1,9 +1,10 @@
-console.log("Website Loaded 🚀");
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+function openVideo(link){
+    window.open(link, "_blank");
+}
+
+// DARK MODE
+const toggle = document.getElementById("modeToggle");
+
+toggle.onclick = () => {
+    document.body.classList.toggle("light");
+};
