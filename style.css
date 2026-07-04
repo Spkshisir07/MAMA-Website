@@ -27,17 +27,32 @@ color:white;
 text-decoration:none;
 }
 
-.home{
-display:flex;
-justify-content:center;
-align-items:center;
-height:90vh;
-text-align:center;
+.home {
+  position: relative;
+  background-image: url("IMG_20260421_170536 (1).png");
+  background-size: cover;
+  background-position: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85); /* dark overlay to fade the photo */
+  z-index: 0;
+}
+
+.home-content {
+  position: relative;
+  z-index: 1;
 }
 
 .profile{
-width:150px;
+width:220pxpx
+height:220px;
 border-radius:50%;
+display:block;
+margin:0 auto;
 }
 
 .video-grid{
