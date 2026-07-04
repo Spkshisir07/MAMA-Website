@@ -77,4 +77,55 @@ nav a {
 
 
 
+.social {
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.social-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.25s ease;
+}
+
+.social-card:hover {
+  transform: scale(1.08);
+}
+
+.social-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.social-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+}
+
+.platform-label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 3px;
+}
