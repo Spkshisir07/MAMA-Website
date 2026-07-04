@@ -6,6 +6,20 @@ body {
   color: white;
 }
 
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
